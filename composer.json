@@ -1,0 +1,43 @@
+{
+  "name": "mrsatik/null-cache",
+  "description": "Empty cache module",
+  "minimum-stability": "stable",
+  "keywords": [
+    "cache",
+    "empty"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Perchenok Alexey",
+      "email": "silenthill.sat@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "psr/cache": "~1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.4",
+    "mrsatik/cs": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "mrsatik\\NullCache\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "mrsatik\\NullCacheTest\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "phpunit"
+    ]
+  },
+  "config": {
+    "secure-http":false
+  }
+}
